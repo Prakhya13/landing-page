@@ -1,0 +1,360 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>EcoLife - Sustainable Living</title>
+
+    <!-- CSS using Style Tag -->
+    <style>
+
+        /* Basic Styling */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            color: #333;
+            background-color: #f5faf6;
+        }
+
+        /* Navigation Bar */
+        nav {
+            background-color: white;
+            padding: 20px 8%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            box-shadow: 0 2px 10px #ddd;
+        }
+
+        .logo {
+            font-size: 28px;
+            font-weight: bold;
+            color: #16803a;
+        }
+
+        nav ul {
+            display: flex;
+            list-style: none;
+            gap: 30px;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: #333;
+            font-weight: bold;
+        }
+
+        nav ul li a:hover {
+            color: #16803a;
+        }
+
+        /* Hero Section */
+        .hero {
+            min-height: 85vh;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 60px 10%;
+            background-color: #e9f8ed;
+        }
+
+        .hero-content {
+            max-width: 600px;
+        }
+
+        .hero-content h4 {
+            color: #16803a;
+            letter-spacing: 2px;
+            margin-bottom: 15px;
+        }
+
+        .hero-content h1 {
+            font-size: 55px;
+            margin-bottom: 20px;
+        }
+
+        .hero-content h1 span {
+            color: #16803a;
+        }
+
+        .hero-content p {
+            font-size: 18px;
+            line-height: 1.7;
+            color: #666;
+            margin-bottom: 30px;
+        }
+
+        /* Button */
+        .btn {
+            display: inline-block;
+            background-color: #16803a;
+            color: white;
+            padding: 14px 28px;
+            text-decoration: none;
+            border-radius: 6px;
+            font-weight: bold;
+        }
+
+        .btn:hover {
+            background-color: #0d642c;
+        }
+
+        /* Illustration */
+        .hero-image {
+            width: 350px;
+            height: 350px;
+            background-color: #d2efd9;
+            border-radius: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 150px;
+        }
+
+        /* Features */
+        .features {
+            padding: 80px 10%;
+            text-align: center;
+        }
+
+        .features h2 {
+            font-size: 35px;
+            margin-bottom: 40px;
+        }
+
+        .cards {
+            display: flex;
+            justify-content: center;
+            gap: 25px;
+            flex-wrap: wrap;
+        }
+
+        .card {
+            background-color: white;
+            width: 280px;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 5px 15px #ddd;
+        }
+
+        .card h3 {
+            margin: 15px 0;
+            color: #16803a;
+        }
+
+        .card p {
+            color: #666;
+            line-height: 1.6;
+        }
+
+        .icon {
+            font-size: 45px;
+        }
+
+        /* Call To Action */
+        .cta {
+            background-color: #16803a;
+            color: white;
+            text-align: center;
+            padding: 70px 20px;
+        }
+
+        .cta h2 {
+            font-size: 35px;
+            margin-bottom: 15px;
+        }
+
+        .cta p {
+            margin-bottom: 25px;
+        }
+
+        .cta .btn {
+            background-color: white;
+            color: #16803a;
+        }
+
+        /* Footer */
+        footer {
+            background-color: #102318;
+            color: white;
+            text-align: center;
+            padding: 20px;
+        }
+
+        /* Mobile View */
+        @media (max-width: 800px) {
+
+            nav ul {
+                display: none;
+            }
+
+            .hero {
+                flex-direction: column;
+                text-align: center;
+            }
+
+            .hero-content h1 {
+                font-size: 40px;
+            }
+
+            .hero-image {
+                width: 250px;
+                height: 250px;
+                font-size: 100px;
+                margin-top: 40px;
+            }
+        }
+
+    </style>
+</head>
+
+<body>
+
+    <!-- Navigation -->
+    <nav>
+
+        <div class="logo">EcoLife</div>
+
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#features">Features</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+
+    </nav>
+
+
+    <!-- Landing Page -->
+    <section class="hero" id="home">
+
+        <div class="hero-content">
+
+            <h4>LIVE GREEN • LIVE BETTER</h4>
+
+            <h1>
+                Make Your Life
+                <span>More Sustainable</span>
+            </h1>
+
+            <p>
+                Discover simple and practical ways to reduce waste,
+                save energy and create a greener future.
+            </p>
+
+            <a href="#features" class="btn">
+                Get Started
+            </a>
+
+        </div>
+
+
+        <div class="hero-image">
+            🌱
+        </div>
+
+    </section>
+
+
+    <!-- Features -->
+    <section class="features" id="features">
+
+        <h2>What We Offer</h2>
+
+        <div class="cards">
+
+            <div class="card">
+
+                <div class="icon">♻️</div>
+
+                <h3>Reduce Waste</h3>
+
+                <p>
+                    Learn simple ways to reduce plastic
+                    and household waste.
+                </p>
+
+            </div>
+
+
+            <div class="card">
+
+                <div class="icon">🌱</div>
+
+                <h3>Go Green</h3>
+
+                <p>
+                    Adopt eco-friendly habits that
+                    protect our environment.
+                </p>
+
+            </div>
+
+
+            <div class="card">
+
+                <div class="icon">⚡</div>
+
+                <h3>Save Energy</h3>
+
+                <p>
+                    Discover smart ways to reduce
+                    your daily energy consumption.
+                </p>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- About -->
+    <section class="features" id="about">
+
+        <h2>About EcoLife</h2>
+
+        <p>
+            EcoLife helps people make environmentally friendly
+            choices through simple and practical ideas for
+            everyday life.
+        </p>
+
+    </section>
+
+
+    <!-- Call To Action -->
+    <section class="cta" id="contact">
+
+        <h2>Start Your Green Journey Today</h2>
+
+        <p>
+            Small changes can make a big difference.
+        </p>
+
+        <a href="#" class="btn">
+            Join EcoLife
+        </a>
+
+    </section>
+
+
+    <!-- Footer -->
+    <footer>
+
+        <p>© 2026 EcoLife | All Rights Reserved</p>
+
+    </footer>
+
+</body>
+
+</html>
+
